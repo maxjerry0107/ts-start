@@ -1,0 +1,27 @@
+.auth-page-layout {
+  height: 100vh;
+
+  .ant-layout {
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      background: @menu-bg;
+
+      @media (max-width: @screen-xs-max) {
+        padding-left: 0;
+      }
+    }
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 @padding-lg;
+
+      .ant-form {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+}
